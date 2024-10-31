@@ -6,7 +6,7 @@ import dotenv
 dotenv.load_dotenv()
 
 
-llm_config = {"model": "gpt-4", "api_key": os.environ["OPENAI_API_KEY"]}
+llm_config = {"model": "gpt-4o-mini", "api_key": os.environ["OPENAI_API_KEY"]}
 assistant = AssistantAgent("assistant", llm_config=llm_config)
 
 user_proxy = UserProxyAgent(
